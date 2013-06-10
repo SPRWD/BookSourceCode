@@ -1,0 +1,1054 @@
+<%-- SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://uvo1xbc3qe9unlyex5f.env.cloudshare.com/sites/chapter6/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fuvo1xbc3qe9unlyex5f%2Eenv%2Ecloudshare%2Ecom%2Fsites%2Fchapter6%2F%5Fcatalogs%2Fmasterpage%2Fspectergroup%2Dnav%2D6%2Dbreadcrumb%2Fspectergroup%2Dnav%2Dbreadcrumb%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+ --%>
+<%@Master language="C#"%>
+<%@Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>
+<%@Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx"%>
+<%@Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx"%>
+<%@Register TagPrefix="SearchWC" Namespace="Microsoft.Office.Server.Search.WebControls" Assembly="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<!DOCTYPE html >
+<SharePoint:SPHtmlTag class="no-js" lang="en" runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+        
+        
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <SharePoint:RobotsMetaTag runat="server">
+        </SharePoint:RobotsMetaTag>
+        <SharePoint:PageTitle runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+                <SharePoint:ProjectProperty Property="Title" runat="server">
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        <SharePoint:StartScript runat="server">
+        </SharePoint:StartScript>
+        <SharePoint:CssLink runat="server" Version="15">
+        </SharePoint:CssLink>
+        <SharePoint:CacheManifestLink runat="server">
+        </SharePoint:CacheManifestLink>
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">
+        </SharePoint:PageRenderMode>
+        <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+        </SharePoint:AjaxDelta>
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+        <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">
+            <WebPartPages:SPWebPartManager runat="server">
+            </WebPartPages:SPWebPartManager>
+        </SharePoint:AjaxDelta>
+        
+        <meta charset="utf-8" />
+        
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/bootstrap.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/bootstrap-responsive.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/superfish.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/nivo-slider.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/isotope.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/elements.css" />
+        <link rel="stylesheet" href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/css/style.css" />
+        <!-- Modernizr enables HTML5 elements &#38; feature detects for optimal performance.
+		Include html5shiv 3.6. Our version is a custom build.
+	   Create your own custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/modernizr-2.6.2.custom.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <!--Grab Microsofts CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <!--place in head in case need to access jquery inline in SP page layout-->
+        <script src="/ajax/jQuery/jquery-1.9.1.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script>
+            <!--
+		document.write('<scr'+'ipt src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery-1.9.1.min.js"></scr'+'ipt>');
+		-->
+        </script>
+        <!--used to help make old scripts work with jquery 1.9-->
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery-migrate-1.1.0.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <!--js libraries-->
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery-ui-1.8.9.custom.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/hoverIntent.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/superfish-1.4.8/superfish.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/superfish-1.4.8/supersubs.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery.nivo.slider.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery.isotope.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery.tweet.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery.tabs.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/poshytip-1.1/jquery.poshytip.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/bootstrap.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <!--custom scripts-->
+        <script src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/js/jquery-custom.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        
+        
+        
+    </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><SharePoint:ImageLink runat="server" /><SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+        
+        
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+        </SharePoint:SPSecurityTrimmedControl>
+        <div id="ms-designer-ribbon">
+            <PublishingRibbon:PublishingRibbon runat="server" />
+            
+        </div>
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <!-- HEADER -->
+                <header>
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span8">
+                                <div id="logo">
+                                    <!--logo snippet-->
+                                    
+                                    <SharePoint:AjaxDelta runat="server" BlockElement="True">
+                                        
+                                        <SharePoint:SPSimpleSiteLink runat="server" CssClass="" ID="logoLink" NavigateUrl="~sitecollection">
+                                            
+                                            <SharePoint:SiteLogoImage name="onetidHeadbnnr0" runat="server" CssClass="" ID="logoImg" LogoImageUrl="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/logo.gif">
+                                                
+                                            </SharePoint:SiteLogoImage>
+                                            
+                                        </SharePoint:SPSimpleSiteLink>
+                                        
+                                    </SharePoint:AjaxDelta>
+                                    <!--end logo snippet-->
+                                </div>
+                                <div class="tagline">
+                                    <h2>
+                                        <span>Better
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </span>
+
+
+
+
+
+
+
+
+
+ Homes                                                                                                                                                                                                                                                                                                                                                                        </h2>
+                                    <h2>
+                                        <span>Stronger
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </span>
+
+
+
+
+
+
+
+
+
+ Communities                                                                                                                                                                                                                                                                                                                                                                        </h2>
+                                </div>
+                            </div>
+                            <div class="span4">
+                            	<div class="sp-breadcrumb">
+									
+									<SharePoint:AjaxDelta id="DeltaPlaceHolderPageTitleInTitleArea" runat="server">
+									<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server">
+									<SharePoint:SPTitleBreadcrumb runat="server" RenderCurrentNodeAsLink="true" SiteMapProvider="SPContentMapProvider" class="breadcrumb-separator" CentralAdminSiteMapProvider="SPXmlAdminContentMapProvider">
+									<PATHSEPARATORTEMPLATE>
+									<asp:Image id="BCSeperator" runat="server" GenerateEmptyAlternateText="true" ImageUrl="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/breadcrumb-separator.png" />
+									</PATHSEPARATORTEMPLATE>
+									</SharePoint:SPTitleBreadcrumb>
+									</asp:ContentPlaceHolder>
+									</SharePoint:AjaxDelta>
+									
+
+                            	</div>
+                                <div class="searchbox">
+                                    <!--search box snippet-->
+                                    <!--
+		                            <div id="searchInputBox">
+		                                <input id="header-search" name="header-search" type="text" autofocus="autofocus" placeholder="search..." accessKey="S" value=""/>
+		                                <a title="Search" href="javascript: {}">
+		                                    <img src="img/icon-search.png" alt="Search"/>
+		                                </a>
+		                            </div>
+		                            -->
+                                    
+                                    
+                                    <SearchWC:SearchBoxScriptWebPart UseSiteCollectionSettings="true" EmitStyleReference="false" ShowQuerySuggestions="false" ChromeType="None" UseSharedSettings="true" TryInplaceQuery="false" ServerInitialRender="true" runat="server">
+                                        
+                                    </SearchWC:SearchBoxScriptWebPart>
+                                    
+                                    <!--end search box snippet-->
+                                </div>
+                            </div>
+                            <div class="social cf">
+                                <ul class="cf">
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Facebook.png" alt="Facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Twitter.png" alt="Twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Google+.png" alt="Google+" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/LinkedIn.png" alt="Linked In" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/RSS.png" alt="Blog" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/YouTube.png" alt="YouTube" />
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a class="social-toggle" title="Follow Us">Toggle
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <!-- ENDS HEADER -->
+                <!-- nav -->
+                <nav id="topnav" class="ms-dialogHidden">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <div class="navbar navbar-inverse">
+                                    <div class="navbar-inner">
+                                        <div class="container">
+                                            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                                                <span class="icon-bar">
+                                                </span>
+                                                <span class="icon-bar">
+                                                </span>
+                                                <span class="icon-bar">
+                                                </span>
+                                            </a>
+                                            <div class="nav nav-collapse collapse">
+                                                <!--nav snippet-->
+                                                
+                                                
+                                                <SharePoint:AjaxDelta runat="server" CssClass="ms-core-navigation ms-dialogHidden" BlockElement="True" ID="DeltaTopNavigation">
+                                                    
+                                                    <SharePoint:DelegateControl runat="server" Id="topNavigationDelegate" ControlId="TopNavigationDataSource">
+                                                        
+                                                        <Template_Controls>
+                                                            <asp:SiteMapDataSource ShowStartingNode="True" SiteMapProvider="SPNavigationProvider" ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002">
+                                                            </asp:SiteMapDataSource>
+                                                        </Template_Controls>
+                                                    </SharePoint:DelegateControl>
+                                                    <a name="startNavigation">
+                                                    </a>
+                                                    <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
+                                                        <SharePoint:AspMenu runat="server" UseSeparateCss="false" AdjustForShowStartingNode="True" StaticDisplayLevels="2" AccessKey="1" SkipLinkText="" CssClass="nav-container" EnableViewState="False" MaximumDynamicDisplayLevels="2" UseSimpleRendering="True" DataSourceID="topSiteMap" Orientation="Horizontal" ID="TopNavigationMenu">
+                                                            
+                                                        </SharePoint:AspMenu>
+                                                    </asp:ContentPlaceHolder>
+                                                    
+                                                </SharePoint:AjaxDelta>
+                                                
+                                                <!--end nav snippet-->
+                                            </div>
+                                            <!--end class nav-->
+                                        </div>
+                                        <!--end container-->
+                                    </div>
+                                    <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+                                        <div class="site-access cf">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-register.png" alt="Register" />
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <wssucw:Welcome runat="server" EnableViewState="false">
+                                                    </wssucw:Welcome>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </SharePoint:SPSecurityTrimmedControl>
+                                </div>
+                            </div>
+                            <!--end span 12-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end fluid container-->
+                </nav>
+                <!-- ends nav -->
+                <!-- MAIN -->
+                <div role="main" id="main">
+                    <div class="container-fluid">
+                        <!--main content placerholder, use the following html as sample content for content placeholder-->
+                        
+                        
+                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <!-- SLIDER -->
+                                        <div class="slider-wrapper theme-nivo-specter theme-project theme-home">
+                                            <div class="ribbon">
+                                            </div>
+                                            <div id="hpslider" class="nivoSlider">
+                                                <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/banner-one.jpg" alt="" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+                                                <a href="#">
+                                                    <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/banner-two.jpg" alt="" title="Maecenas massa arcu, posuere eget hendrerit at, venenatis sit." />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- ENDS SLIDER -->
+                                    </div>
+                                </div>
+                                <!-- headline -->
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="headline">
+                                            <h2>Welcome to Specter Group
+								            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </h2>
+                                            <h4>A Premier Builder Service Eastern Atlantis
+								            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ENDS headline -->
+                                <!-- community list -->
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="community-list section">
+                                            <h2 class="heading">Communities
+								            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </h2>
+                                            <div class="row-fluid list">
+                                                <div class="span4">
+                                                    <a href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/single.html" class="thumbcaption">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/communities-eagle-small.jpg" alt="Eagle Vista" />
+                                                        <span>Eagle Vista
+								                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </span>
+                                                    </a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi.
+								                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+                                                <div class="span4">
+                                                    <a href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/single.html" class="thumbcaption">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/communities-spruce-small.jpg" alt="Spruce Meadows" />
+                                                        <span>Spruce Meadows
+								                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </span>
+                                                    </a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi.
+								                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+                                                <div class="span4">
+                                                    <a href="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/single.html" class="thumbcaption">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/communities-otay-small.jpg" alt="Otay Crossings" />
+                                                        <span>Otay Crossings
+								                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </span>
+                                                    </a>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi.
+								                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end community list -->
+                                <!-- community list -->
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="our-homes section">
+                                            <h2 class="heading">Our Homes
+								            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </h2>
+                                            <div class="row-fluid">
+                                                <div class="span8">
+                                                    <div class="header">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-homes-home.png" alt="" />
+                                                    </div>
+                                                    <div class="row-fluid homes">
+                                                        <div class="span4">
+                                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/homes-small-one.jpg" alt="Home" />
+                                                        </div>
+                                                        <div class="span8">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at.
+								                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            <br />
+                                                            <a href="#" class="button">Learn More
+								                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="span4">
+                                                    <div class="header">
+                                                        <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-homes-view.png" alt="" />
+                                                    </div>
+                                                    <div class="contentbox views cf">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-view-photos.png" alt="Photes" />
+                                                                    <br />
+
+
+
+
+
+
+
+
+
+								Photos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-view-video.png" alt="Videos" />
+                                                                    <br />
+
+
+
+
+
+
+
+
+
+								Videos                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                                                            </li>
+                                                            <li class="full">
+                                                                <a href="#">
+                                                                    <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/icon-view-tour.png" alt="Virtual Tours" />
+                                                                    <br />
+
+
+
+
+
+
+
+
+
+								Virtual Tours                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end community list -->
+                            </asp:ContentPlaceHolder>
+                        </SharePoint:AjaxDelta>
+                        
+                        <!--end content placerholder-->
+                    </div>
+                </div>
+                <!-- ENDS MAIN -->
+                <footer class="ms-dialogHidden">
+                    <div class="container-fluid">
+                        <div class="row-fluid">
+                            <!--columns-->
+                            <div class="span4">
+                                <h4>ABOUT US
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi, fermentum cursus nisi rhoncus quis. Fusce malesuada rhoncus vehicula.
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </p>
+                                <ul class="contact">
+                                    <li class="phone">(800) 555-4321
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </li>
+                                    <li class="email">
+                                        <a href="mailto:info@spectergroup.com">info@spectergroup.com
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li class="fb">
+                                        <a href="http://www.facebook.com">spectergroup
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="span4">
+                                <div id="tweets" class="footer-col tweet">
+                                    <h4>TWITTER NEWS
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="span4">
+                                <h4>RECENT POSTS
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                </h4>
+                                <div class="recent-post cf">
+                                    <a href="#" class="thumb">
+                                        <img src="http://placehold.it/55x55&amp;text=Post+1" alt="Post" />
+                                    </a>
+                                    <div class="post-head">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adip.
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                        <span> May 12, 2013
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="recent-post cf">
+                                    <a href="#" class="thumb">
+                                        <img src="http://placehold.it/55x55&amp;text=Post+2" alt="Post" />
+                                    </a>
+                                    <div class="post-head">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adip.
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                        <span> April 17, 2013
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="recent-post cf">
+                                    <a href="#" class="thumb">
+                                        <img src="http://placehold.it/55x55&amp;text=Post+3" alt="Post" />
+                                    </a>
+                                    <div class="post-head">
+                                        <a href="#">Lorem ipsum dolor sit amet, consectetur adip.
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                        <span> March 30, 2013
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- social -->
+                            <div class="sb-holder cf" style="display: none;">
+                                <ul id="social-bar" class="cf">
+                                    <li class="left-corner">
+                                        <i>
+                                        </i>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.facebook.com" title="Become a fan">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Facebook.png" alt="Facebook" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.twitter.com" title="Follow my tweets">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Twitter.png" alt="twitter" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.google.com" title="Add to the circle">
+                                            <img src="/sites/chapter6/_catalogs/masterpage/spectergroup-nav-6-breadcrumb/img/social/Google+.png" alt="Google plus" />
+                                        </a>
+                                    </li>
+                                    <li class="right-corner">
+                                        <i>
+                                        </i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ENDS social -->
+                            <!-- ENDS columns -->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end container-->
+                    <!--end wrapper-->
+                    <!-- bottom footer-->
+                    <div class="footer-bottom">
+                        <div class="container-fluid">
+                            <div class="row-fluid">
+                                <div class="span6 copyright">
+                                    <p>Copyright © 2013 Specter Group - All Rights Reverved
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </p>
+                                </div>
+                                <div class="span6 sitemap">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Privacy Policy
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Legal Terms and Conditions
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Site Map
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end bottom footer-->
+                </footer>
+            </div>
+        </div>
+    <SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><SharePoint:formdigest runat="server" /></asp:ContentPlaceHolder></SharePoint:AjaxDelta></SharePoint:SharePointForm><SharePoint:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></SharePoint:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSearchArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" /></body>
+</SharePoint:SPHtmlTag>
