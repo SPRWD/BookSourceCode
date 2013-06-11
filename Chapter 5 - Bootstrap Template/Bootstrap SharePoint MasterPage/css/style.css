@@ -164,7 +164,7 @@ header .searchbox a {
 	display: inline-block;
 	height: 24px;
 	width: 22px;
-	padding: 7px 0px 5px;
+	padding: 7px 10px 5px 0px;
 	vertical-align: top;
 	-webkit-transition: all 0s ease;
 	-moz-transition: all 0s ease;
@@ -175,7 +175,7 @@ header .searchbox a {
 header .searchbox a:hover {
 	background-position: 0px -69px;
 }
-header .searchbox a img{
+header .searchbox a img {
 	display: none;
 }
 /*social*/
@@ -719,8 +719,6 @@ footer .footer-bottom  .sitemap li a:hover {
 }
 /*end clear fix*/
 
-
-
 /*additional page fixes*/
 /*general*/
 .page-content {
@@ -1262,8 +1260,6 @@ img.floatright, div.floatright {
 	margin-top: 10px;
 	width: 93.1818%;
 }
-/*we want to let Bootstrap handle buttons for us*/
-/*
 #commentform input[type="submit"], #contactForm input[type="submit"], #commentform input[type="button"], #contactForm input[type="button"] {
 	background: none repeat scroll 0 0 #333333;
 	-moz-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -1289,7 +1285,6 @@ img.floatright, div.floatright {
 #commentform input#submit, #contactForm input#submit {
 	margin-top: 7px;
 }
-*/
 #commentform label, #contactForm label {
 	display: block;
 	margin-bottom: -10px;
@@ -1314,7 +1309,6 @@ img.floatright, div.floatright {
 }
 /*end forms*/
 /*end additional page fixes*/
-
 
 
 /*general sp fixes*/
@@ -1395,6 +1389,20 @@ header #SearchBox .ms-srch-sb input[type=text]{
 	display: none;
 }
 /*end search box*/
+
+/*sign in*/
+nav .site-access .ms-signInLink {
+	width: 43px;
+	height: 43px;
+	display: block;
+	text-indent: -1000px;
+	overflow: hidden;
+	background: transparent url('../img/icon-login.png') no-repeat 0 0;
+	line-height: 1em;
+	padding: 0px;
+}
+/*end sign in*/
+
 /*end header*/
 #s4-bodyContainer {
     padding-bottom: 0px;
@@ -1405,6 +1413,7 @@ header #SearchBox .ms-srch-sb input[type=text]{
 
 /*bootstrap fixes*/
 /*bootstrap resets for SharePoint*/
+/*listing 5-20*/
 *, *:before, *:after {
 	-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
 }
@@ -1426,6 +1435,9 @@ img {
 	float: none;
 	margin: 0px;
 }
+/*end listing 5-20*/
+
+/*listing 5-21*/
 #s4-ribbonrow [class*="span"] {
     float: none;
     margin-left: 0px;
@@ -1443,9 +1455,17 @@ label {
     display: inline-block;
     margin-bottom: 0px;
 }
+/*end listing 5-21*/
 /*end bootstrap resets*/
 
-header > .container-fluid {
+/*Listing 5-23*/
+.theme-nivo-specter .nivoSlider img {
+    height: 100% !important;
+}
+/*end Listing 5-23*/
+
+/*Listing 5-24*/
+header > .container, header > .container-fluid {
 	position: relative;
 }
 header .searchbox {
@@ -1463,96 +1483,15 @@ header #searchInputBox input[type=text]{
 	-moz-transition: none;
 	-webkit-transition: none;
 }
+/*end Listing 5-24*/
+
+/*Listing 5-25*/
 header .social {
 	right: 20px;
 }
-nav#topnav .navbar {
-	margin-bottom: 0px;
-	position: relative;
-}
-nav#topnav .navbar-inverse .navbar-inner {
-	background: none repeat scroll 0 0 #000000;
-	border-color: #333333;
-	border-style: solid;
-	border-width: 1px 1px 0;
-	height: 59px;
-	padding: 0px;
-}
-nav .site-access {
-	right: 10px;
-}
-#topnav .navbar .btn-navbar {
-	padding: 14px 16px;
-}
-#topnav .navbar .btn {
-    margin-top: 7px;
-}
-#topnav .navbar .btn-navbar .icon-bar {
-    width: 24px;
-}
-#topnav .btn-navbar .icon-bar + .icon-bar {
-    margin-top: 6px;
-}
+/*end Listing 5-25*/
 
-.theme-nivo-specter .nivoSlider img {
-    height: 100% !important;
-}
-
-.community-list .list .thumbcaption {
-	display: block;
-	line-height: 0;
-	margin-bottom: 10px;
-	padding: 0px;
-	overflow: hidden;
-	position: relative;
-}
-.community-list .list .thumbcaption img {
-	max-width: 100%;
-	width: 100%;
-}
-.community-list .list .thumbcaption > span {
-	position: absolute;
-	bottom: -100px;
-	left: 0px;
-	padding: 20px 2% 0px;
-	background: #000 none;
-	opacity: .7;
-	-moz-opacity: 0.7;
-	filter: alpha(opacity=7);
-	height: 20px;
-	width: 96%;
-	display: block;
-	color: #fff;
-	text-align: center;
-	font-size: 20px;
-}
-.our-homes > .row-fluid {
-	padding-top: 40px;
-}
-.our-homes > .row-fluid > .span8, .our-homes > .row-fluid > .span4 {
-	background: #e5e5e5 none;
-	border: 1px #c2c2c2 solid;
-	min-height: 280px;
-	position: relative;
-}
-.our-homes  .header {
-	position: relative;
-	text-align: center;
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	margin-top: -50px;
-}
-.our-homes .header img {
-	display: block;
-	float: left;
-	position: relative;
-	right: 50%;
-}
-.our-homes .homes img {
-	padding: 0px 5%;
-	width: 90%;
-}
+/*Listing 5-26*/
 footer {
 	padding-top: 10px;
 }
@@ -1575,8 +1514,10 @@ footer .footer-bottom .copyright, footer .footer-bottom .sitemap {
 footer .footer-bottom  .sitemap {
 	text-align: right;
 }
+/*end Listing 5-26*/
 
 /*responsive media queries*/
+/*Listing 5-22*/
 @media (min-width: 1200px) {
 	header > .container-fluid, nav#topnav > .container-fluid, footer > .container-fluid, .footer-bottom  > .container-fluid  {
 		max-width: 1160px;
@@ -1589,7 +1530,9 @@ footer .footer-bottom  .sitemap {
 		margin-right: auto;
 	}
 }
-/*responsive media queries*/
+/*end Listing 5-22*/
+
+/*Listing 5-27*/
 @media (max-width: 979px) {
 	header #logo {
 		width: 50%;
@@ -1606,33 +1549,6 @@ footer .footer-bottom  .sitemap {
 	header .searchbox {
 		margin-top: 50px;
 	}	
-	nav#topnav {
-		height: auto;
-	}
-	nav#topnav .navbar-inverse .navbar-inner {
-		border: none;
-		height: auto;
-	}
-	nav#topnav .navbar .nav {
-		float: none;
-		margin: 0px;
-	}
-	nav#topnav .nav ul.root > li {
-		border-right: none;
-		border-top: 1px solid #2F2F2F;
-		display: block;
-		float: none;
-		height: auto;
-		background: #000 none;
-	}
-	nav#topnav .nav ul.root > li:first-child, nav#topnav .nav ul.root > li a {
-		padding: 15px 20px;
-		border-top: none;
-	}
-	nav .site-access {
-		right: auto;
-		left: 10px;
-	}
 }
 @media (max-width: 767px) {
 	header #logo img {
@@ -1656,35 +1572,6 @@ footer .footer-bottom  .sitemap {
 	header .social {
 		right: 1%;
 	}
-	.community-list, .our-homes {
-		padding: 0px 10px;
-	}
-	.our-homes > .row-fluid > .span8, .our-homes > .row-fluid > .span4 {
-		background: #e5e5e5 none;
-		border-color: transparent;
-		min-height: 0px;
-		padding: 0px 10px 10px;
-	}
-	.our-homes > .row-fluid > .span4 {
-		margin-top: 50px;
-	}
-	footer .footer-bottom .copyright {
-		padding-left: 9px;
-	}
-	footer .footer-bottom  .sitemap {
-		text-align: left;
-	}
-}
-@media (max-width: 599px) {
-	.slider-wrapper {
-		display: none;
-	}
-	/*target just span4 containers within .mobile-contain-height*/
-	.span6 {
-		max-height: 200px; /*set a maximum height*/
-		overflow-y: hidden; /*hide any additional overflow*/
-	}
-
 }
 @media (max-width: 479px) {
 	header .tagline {
@@ -1698,141 +1585,5 @@ footer .footer-bottom  .sitemap {
 	header .tagline h2 {
 		font-size: 16px;
 	}
-	footer .footer-bottom .copyright {
-		padding-left: 10px;
-	}
-	footer .footer-bottom .sitemap {
-		margin-top: 10px;
-		border-top: 1px #333333 solid;
-		padding-top: 10px;
-	}
-	footer .footer-bottom .sitemap li {
-		border: none;
-		display: block;
-		line-height: 1em;
-		padding: 0px 0px 5px 10px;
-	}
 }
-
-
-/*bootstrap fixes for additional pages*/
-.row-fluid #posts-list, .row-fluid .property-content, .row-fluid .property-info {
-	width: auto;
-	float: none;
-}
-#posts-list article .feature-image img {
-    width: 100%;
-}
-.row-fluid #sidebar {
-	width: auto;
-	float: none;
-}
-#sidebar .ads a {
-	width: 49%;
-	margin-right: 2%;
-}
-#sidebar .ads img {
-	width: 100%;
-}
-.feature {
-	width: 100%;
-}
-.feature li {
-	margin-left: 1%;
-	width: 32%;
-}
-.feature li .thumb {
-	margin: 3%;
-	width: 94%;
-}
-.feature li .thumb .date {
-	right: 10%;
-	left: auto;
-}
-/*end bootstrap fixes for additional pages*/
-
-/*chapter 6 top nav fixes, listing 6.5*/
-/*top nav*/
-/*center menu*/
-nav#topnav .ms-core-listMenu-horizontalBox {
-	display: block;
-}
-/*hide or provide padding for downdown arrow*/
-nav#topnav .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
-	padding-right: 20px; 
-	/*background: transparent none;*/ /*unhide to hide the down arrow*/
-}
-/*remove border from menu items*/
-nav#topnav .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
-    border: none;
-}
-/*correct location of dropdown menu*/
-nav#topnav .nav ul.root > li ul {
-	border: none;
-	top: 54px !important;
-}
-/*fix height of dropdown menu list items*/
-nav#topnav .nav ul.root > li ul li a {
-	height: 25px;
-}
-/*end Listing 6.5*/
-
-/*chapter 6 top nav fixes - edit nav menu inline, listing 6.6*/
-/*edit links font*/
-nav#topnav .nav .ms-metadata {
-	font-size: inherit;
-	font: inherit;
-	color: #fff;
-}
-/*images within nav should not use respponsive properties*/
-nav#topnav .nav img {max-width: none;}
-nav#topnav .nav .ms-navedit-hidespan {display: block;}
-/*force the edit node text icon into a box*/
-nav#topnav .nav a.ms-navedit-hidelink {
-	padding: 6px 0px 0px !important;
-	margin: 0px !important;
-	display: block !important;
-	overflow: hidden !important;
-	height: 17px !important;
-}
-/*remove border added to node table*/
-nav#topnav .nav .ms-core-listMenuEdit, nav#topnav .nav .ms-core-listMenuEdit:hover {
-    border: none;
-}
-/*edit node text padding*/
-nav#topnav .nav .ms-navedit-hiddenAppendArea {
-	padding: 20px 10px 10px;
-	color: #F3E4C8;
-}
-/*edit link node text on dynamic menus requires background*/
-nav#topnav .nav .dynamic .ms-navedit-deletelinkCell {
-	background: #333333 none;
-}
-/*add a link should float left*/
-nav#topnav .nav .ms-navedit-addNewLink {
-	display: inline-block !important;
-}
-/*bump save and cancel buttons down*/
-nav#topnav .nav .ms-navedit-editButton {
-	margin-top: 20px;
-}
-nav#topnav .nav .ms-core-listMenu-horizontalBox span.ms-list-addnew-imgSpan16 {
-	vertical-align: middle;
-	margin-right: 5px;
-}
-/*reset the first node to not show a home icon, rather text*/
-nav#topnav .nav ul.root > li.ms-navedit-dropNode:first-child {
-    height: auto;
-    padding: 0px;
-}
-nav#topnav .nav ul.root > li.ms-navedit-dropNode:first-child a {
-    background: transparent none;
-    height: auto;
-    overflow: visible;
-    padding: 21px 20px;
-    text-indent: 0;
-    white-space: nowrap;
-    width: auto;
-}
-/*end quick edit mode*/
-/*end listing 6.6*/
+/*end Listing 5-27*/
