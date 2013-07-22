@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="0e9c4ead-1ad1-4fd2-aeb1-951d7d4edd27" 
+        solutionId="0e9c4ead-1ad1-4fd2-aeb1-951d7d4edd27" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SPGeolocationList"
+        sharePointProductVersion="15.0">
+  <features>
+        <featureReference itemId="d9eb4b9c-9c34-42ff-be9b-3c5867a9c228" />
+  </features>
+</package>

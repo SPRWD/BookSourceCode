@@ -1,0 +1,4 @@
+C:\Users\Administrator\Desktop\SPapps\SPGeolocationList\SPGeolocationList\bin\Debug\SPGeolocationList.pdb
+C:\Users\Administrator\Desktop\SPapps\SPGeolocationList\SPGeolocationList\obj\Debug\SPGeolocationList.dll
+C:\Users\Administrator\Desktop\SPapps\SPGeolocationList\SPGeolocationList\obj\Debug\SPGeolocationList.pdb
+C:\Users\Administrator\Desktop\SPapps\SPGeolocationList\SPGeolocationList\obj\Debug\SPGeolocationList.csprojResolveAssemblyReference.cache

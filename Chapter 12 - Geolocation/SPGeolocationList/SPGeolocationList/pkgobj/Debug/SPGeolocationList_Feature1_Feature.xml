@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="SharePoint App Feature" Id="d9eb4b9c-9c34-42ff-be9b-3c5867a9c228" Scope="Web" Title="SPGeolocationList Feature1">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\App.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2-vsdoc.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppIcon.png" />
+    <ElementManifest Location="LocationListInstance\Elements.xml" />
+    <ElementManifest Location="LocationList\Elements.xml" />
+    <ElementFile Location="LocationList\Schema.xml" />
+  </ElementManifests>
+</Feature>
