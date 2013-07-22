@@ -1,0 +1,10 @@
+<div data-provides="fileupload" class="fileupload fileupload-new">
+   <input type="hidden"/> 
+   <input type="hidden"/> 
+   <div class="input-append">
+      <div class="uneditable-input span3"> 
+         <i class="icon-file fileupload-exists"></i>
+         <span class="fileupload-path"></span> &#160;</div>
+      <span class="btn btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span><input type="file"/> </span><a data-dismiss="fileupload" href="#" class="btn fileupload-exists">Remove</a><a data-dismiss="fileuploadnow" href="#" class="btn fileupload-exists">Upload</a><span class="fileupload-preview"></span></div>
+   <br/> 
+</div>
