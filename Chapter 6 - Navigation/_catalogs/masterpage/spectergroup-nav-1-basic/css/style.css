@@ -1374,6 +1374,7 @@ header #SearchBox .ms-srch-sb input[type=text]{
 }
 .ms-srch-sb > .ms-srch-sb-navLink img {
 	display: block;
+	max-width: none;
 }
 .ms-srch-sb > .ms-srch-sb-searchLink {
 	height: 24px;
@@ -1684,7 +1685,6 @@ footer .footer-bottom  .sitemap {
 		max-height: 200px; /*set a maximum height*/
 		overflow-y: hidden; /*hide any additional overflow*/
 	}
-
 }
 @media (max-width: 479px) {
 	header .tagline {

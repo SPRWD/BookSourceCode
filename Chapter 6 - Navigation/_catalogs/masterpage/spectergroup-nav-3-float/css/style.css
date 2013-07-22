@@ -1357,7 +1357,7 @@ header #SearchBox .ms-srch-sb-borderFocused {
 }
 header #SearchBox .ms-srch-sb input[type=text]{
 	border: 0px;
-	width: 200px;
+	width: 170px;
 	height: 28px;
 	padding: 5px 10px;
 	font-size: 16px;
@@ -1366,6 +1366,15 @@ header #SearchBox .ms-srch-sb input[type=text]{
 	background: transparent none;
 	display: inline-block;
 	vertical-align: top;
+}
+.ms-srch-sb > .ms-srch-sb-navLink  {
+	background: transparent none;
+	padding: 0px;
+	margin:  7px 10px 5px 0;
+}
+.ms-srch-sb > .ms-srch-sb-navLink img {
+	display: block;
+	max-width: none;
 }
 .ms-srch-sb > .ms-srch-sb-searchLink {
 	height: 24px;
@@ -1598,29 +1607,6 @@ footer .footer-bottom  .sitemap {
 	header .searchbox {
 		margin-top: 50px;
 	}	
-	nav#topnav {
-		height: auto;
-	}
-	nav#topnav .navbar-inverse .navbar-inner {
-		border: none;
-		height: auto;
-	}
-	nav#topnav .navbar .nav {
-		float: none;
-		margin: 0px;
-	}
-	nav#topnav .nav ul.root > li {
-		border-right: none;
-		border-top: 1px solid #2F2F2F;
-		display: block;
-		float: none;
-		height: auto;
-		background: #000 none;
-	}
-	nav#topnav .nav ul.root > li:first-child, nav#topnav .nav ul.root > li a {
-		padding: 15px 20px;
-		border-top: none;
-	}
 	nav .site-access {
 		right: auto;
 		left: 10px;
@@ -1676,11 +1662,6 @@ footer .footer-bottom  .sitemap {
 		max-height: 200px; /*set a maximum height*/
 		overflow-y: hidden; /*hide any additional overflow*/
 	}
-
-}
-		overflow-y: hidden; /*hide any additional overflow*/
-	}
-
 }
 @media (max-width: 479px) {
 	header .tagline {
@@ -1836,17 +1817,24 @@ nav#topnav .nav ul.root > li.ms-navedit-dropNode:first-child a {
 /*listng 6.11*/
 /*floating navigation*/
 /*top level nav container show no long float and should have grow in height as needed*/
-nav#topnav {
-   height: auto;
-}
-/*require that each menu item display inline*/
-nav#topnav .nav ul.root > li {
-   display: inline-block;
-   border: none;
-}
-/*remove any border and fix padding*/  
-nav#topnav .nav ul.root > li a {
-   border: none;
+@media (max-width: 979px) {
+	nav#topnav {
+	   height: auto;
+	}
+	nav#topnav .navbar-inverse .navbar-inner {
+		border: none;
+		height: auto;
+	}
+
+	/*require that each menu item display inline*/
+	nav#topnav .nav ul.root > li {
+	   display: inline-block;
+	   border: none;
+	}
+	/*remove any border and fix padding*/  
+	nav#topnav .nav ul.root > li a {
+	   border: none;
+	}
 }
 /*end floating navigation*/
 /*end listng 6.11*/

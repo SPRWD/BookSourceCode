@@ -1357,7 +1357,7 @@ header #SearchBox .ms-srch-sb-borderFocused {
 }
 header #SearchBox .ms-srch-sb input[type=text]{
 	border: 0px;
-	width: 200px;
+	width: 170px;
 	height: 28px;
 	padding: 5px 10px;
 	font-size: 16px;
@@ -1366,6 +1366,15 @@ header #SearchBox .ms-srch-sb input[type=text]{
 	background: transparent none;
 	display: inline-block;
 	vertical-align: top;
+}
+.ms-srch-sb > .ms-srch-sb-navLink  {
+	background: transparent none;
+	padding: 0px;
+	margin:  7px 10px 5px 0;
+}
+.ms-srch-sb > .ms-srch-sb-navLink img {
+	display: block;
+	max-width: none;
 }
 .ms-srch-sb > .ms-srch-sb-searchLink {
 	height: 24px;
@@ -1676,11 +1685,6 @@ footer .footer-bottom  .sitemap {
 		max-height: 200px; /*set a maximum height*/
 		overflow-y: hidden; /*hide any additional overflow*/
 	}
-
-}
-		overflow-y: hidden; /*hide any additional overflow*/
-	}
-
 }
 @media (max-width: 479px) {
 	header .tagline {
@@ -1881,6 +1885,7 @@ nav#topnav .nav ul.root > li.ms-navedit-dropNode:first-child a {
       left: auto !important;
       top: auto !important;
       position: relative !important;
+      width: auto !important;
    }
    nav#topnav .nav ul.root > li ul li a {
       padding: 15px 20px;

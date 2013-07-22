@@ -1368,6 +1368,7 @@ header #SearchBox .ms-srch-sb input[type=text]{
 }
 .ms-srch-sb > .ms-srch-sb-navLink img {
 	display: block;
+	max-width: none;
 }
 .ms-srch-sb > .ms-srch-sb-searchLink {
 	height: 24px;
