@@ -1,0 +1,58 @@
+﻿<!--
+/_catalogs/masterpage/spectergroup-bootstrap3/cewp-content/contact-1-main.htm
+-->
+<div class="row">
+	<!-- page-content -->
+	<div class="col-sm-12 page-content">
+		<!-- entry-content -->	
+		<div class="section cf">
+			<h2 class="heading">Location</h2>
+			
+			<div id="map_canvas"></div>
+			<!-- GOOGLE MAPS -->
+			<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true" ></script>
+			<script type="text/javascript">
+				function initGMap() {
+					var latlng = new google.maps.LatLng(38.5450, -121.7394);
+					var myOptions = {
+					  zoom: 12,
+					  center: latlng,
+					  mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"),
+					myOptions);
+				}
+				jQuery(document).ready(function($) {initGMap();});
+			</script>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas massa arcu, posuere eget hendrerit at, venenatis sit amet elit. Nullam tempor interdum nisi.</p>
+			<!-- ENDS GOOGLE MAPS -->
+		</div>
+		<div id="contactForm" class="section noborder cf">
+			<h4 class="heading">Contact Form</h4>
+			<!-- form -->
+			<fieldset >
+				<p>
+					<label for="name" >Name</label>
+					<!--<input name="name"  id="name" type="text" class="form-poshytip" title="Enter your full name" />-->
+				</p>
+				<p>
+					<label for="email" >Email</label>
+					<!--<input name="email"  id="email" type="text" class="form-poshytip" title="Enter your email address" />-->
+				</p>
+				<p>
+					<label for="web">Website</label>
+					<!--<input name="web"  id="web" type="text" class="form-poshytip" title="Enter your website" />-->
+				</p>
+				<p>
+					<label for="comments">Message</label>
+					<!--<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" title="Enter your comments"></textarea>-->
+				</p>
+				<!--<p><input type="button" value="Send" name="submit" id="submit" class="btn" /> <span id="error" class="warning">Message</span></p>-->
+			</fieldset>
+				
+			<p id="sent-form-msg" class="success">Form data sent. Thanks for your comments.</p>
+		</div>
+		<!-- ENDS section -->
+	</div>
+	<!-- ENDS page-content -->
+</div>

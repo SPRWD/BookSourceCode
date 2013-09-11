@@ -164,7 +164,7 @@ header .searchbox a {
 	display: inline-block;
 	height: 24px;
 	width: 22px;
-	padding: 7px 10px 5px 0px;
+	padding: 7px 0px 5px;
 	vertical-align: top;
 	-webkit-transition: all 0s ease;
 	-moz-transition: all 0s ease;
@@ -175,7 +175,7 @@ header .searchbox a {
 header .searchbox a:hover {
 	background-position: 0px -69px;
 }
-header .searchbox a img {
+header .searchbox a img{
 	display: none;
 }
 /*social*/
@@ -719,6 +719,7 @@ footer .footer-bottom  .sitemap li a:hover {
 }
 /*end clear fix*/
 
+
 /*additional page fixes*/
 /*general*/
 .page-content {
@@ -1260,6 +1261,8 @@ img.floatright, div.floatright {
 	margin-top: 10px;
 	width: 93.1818%;
 }
+/*we want to let Bootstrap handle buttons for us*/
+/*
 #commentform input[type="submit"], #contactForm input[type="submit"], #commentform input[type="button"], #contactForm input[type="button"] {
 	background: none repeat scroll 0 0 #333333;
 	-moz-box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.1);
@@ -1285,6 +1288,7 @@ img.floatright, div.floatright {
 #commentform input#submit, #contactForm input#submit {
 	margin-top: 7px;
 }
+*/
 #commentform label, #contactForm label {
 	display: block;
 	margin-bottom: -10px;
@@ -1311,6 +1315,453 @@ img.floatright, div.floatright {
 /*end additional page fixes*/
 
 
+/*bootstrap fixes*/
+header #logo {
+    width: 50%;
+}
+header #logo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+	margin: 10px 0 0 0px;
+}
+header .tagline {
+	background: none repeat scroll 0 0 transparent;
+	display: block;
+	margin: 5px 0px;
+	min-height: 0;
+	padding: 0;
+	vertical-align: top;
+}
+header .tagline h2 {
+    font-size: 16px;
+}
+header .searchbox {
+	float: none;
+	margin: 10px 0px;
+	width: 100%;
+	position: relative;
+	bottom: auto;
+	right: auto;
+}
+header #searchInputBox input[type=text] {
+	width: 80%;
+	height: 36px;
+	box-shadow: none;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+header .searchbox a {
+	box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;
+	float: right;
+	margin-right: 2%;
+}
+header > .container {
+	position: relative;
+}
+header .social {
+	box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;
+	right: 15px;
+}
+header .social a.social-toggle {
+	box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;
+}
+nav#topnav {
+	height: 52px;
+}
+nav#topnav > .container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+nav#topnav > .container > .row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+nav#topnav > .container > .row > .col-md-12 {
+	padding: 0px;
+}
+nav#topnav .navbar {
+	margin-bottom: 0;
+	position: relative;
+}
+nav .site-access {
+	left: 15px;
+	top: 4px;
+	right: auto;
+}
+nav .site-access li {
+	float: left;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+nav#topnav .nav ul.root > li {
+	background: none repeat scroll 0 0 #000000;
+	border-right: medium none;
+	border-top: 1px solid #2F2F2F;
+	display: block;
+	float: none;
+	height: auto;
+}
+nav#topnav .nav ul.root > li:first-child {
+	height: 28px;
+	padding: 15px 0px 16px;
+}
+nav#topnav .nav ul.root > li:first-child, nav#topnav .nav ul.root > li a {
+	border-top: medium none;
+	padding: 15px 0px;
+}
+nav#topnav .navbar-toggle {
+    margin-right: 0px;
+}
+nav#topnav .navbar-collapse {
+	clear: both;
+}
+nav#topnav .navbar-collapse.in {
+    overflow-y: visible;
+}
+nav#topnav .nav ul.root > li {
+	background: transparent none;
+}
+nav#topnav .nav ul.root > li:first-child {
+	height: 58px;
+}
+nav#topnav .nav ul.root > li {
+	background: transparent none;
+}
+nav#topnav .nav ul.root > li a {
+	height: 47px;
+}
+nav#topnav .sfHover > ul {
+	display: none !important;
+}
+
+/*content areas*/
+.slider-wrapper {
+	display: none;
+	margin: 0 -15px;
+}
+.slider-wrapper.slider-community {
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+.community-list .list .thumbcaption {
+    display: block;
+    line-height: 0;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+.community-list .list .thumbcaption img {
+	max-width: 100%;
+	width: 100%;
+}
+.community-list .list .thumbcaption > span {
+	box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;
+	background: none repeat scroll 0 0 #000000;
+	bottom: -100px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 20px;
+	height: 20px;
+	left: 0;
+	opacity: 0.7;
+	padding: 20px 2% 0;
+	position: absolute;
+	text-align: center;
+	width: 96%;
+}
+
+.our-homes > .row {
+	padding-top: 40px;
+}
+.our-homes  .our-homes-col-wrapper {
+	background: none repeat scroll 0 0 #E5E5E5;
+	border: 1px #c2c2c2 solid;
+	min-height: 280px;
+	position: relative;
+	border-color: rgba(0, 0, 0, 0);
+	padding-bottom: 10px;
+}
+.our-homes > .row > .col-md-4 {
+    margin-top: 50px;
+}
+.our-homes  .header {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	margin-top: -50px;
+}
+.our-homes .header img {
+	display: block;
+	float: left;
+	position: relative;
+	right: 50%;
+}
+.our-homes .homes img {
+	padding: 0px;
+	width: 100%;
+}
+
+.row #posts-list, .row .property-content, .row .property-info {
+	width: auto;
+	float: none;
+}
+#posts-list article .feature-image img {
+    width: 100%;
+}
+.row #sidebar {
+	width: auto;
+	float: none;
+}
+.row #sidebar .ads a {
+	width: 49%;
+	margin-right: 2%;
+}
+.row #sidebar .ads img {
+	width: 100%;
+}
+
+.feature {
+	width: 100%;
+}
+.feature li {
+	margin-left: 1%;
+	width: 32%;
+}
+.feature li .thumb {
+	margin: 3%;
+	width: 94%;
+}
+.feature li .thumb .date {
+	right: 10%;
+	left: auto;
+	height: 60px;
+}
+/*end content areas*/
+
+/*common components*/
+#main .page-navigation {
+	display: block;
+	float: none;
+	left: auto;
+	text-align: center;
+}
+#main .page-navigation div {
+	right: auto;
+}
+#main .page-navigation .nav-next {
+    background: url("../img/icon-arrows.png") no-repeat scroll left -38px #333333;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+#main .page-navigation a {
+    height: 38px;
+	font-size: 13px;
+}
+#main .page-navigation .nav-next {
+	margin-right: 0px;
+	display: inline-block;
+	float: none;
+	left: auto;
+}
+#main .page-navigation .nav-previous {
+	margin-right: 0px;
+	display: inline-block;
+	float: none;
+	left: auto;
+}
+.row code {
+	white-space: normal;
+}
+/*end common components*/
+
+footer {
+	padding-top: 10px;
+}
+footer .col-md-4 h1, footer .col-md-4 h2, footer .col-md-4 h3, footer .col-md-4 h4, footer .col-md-4 h5, footer .col-md-4 h6 {
+	font-weight: normal;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	padding-top: 0;
+	text-align: center;
+}
+footer .footer-bottom  .container {
+	padding: 15px;
+}
+footer .footer-bottom p, footer .footer-bottom li {
+	font-size: 13px;
+}
+footer .footer-bottom .copyright, footer .footer-bottom .sitemap {
+	min-height: 0px;
+}
+footer .footer-bottom  .copyright {
+	width: 100%;
+}
+footer .footer-bottom  .sitemap {
+	border-top: 1px solid #333333;
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: left;
+	float: left;
+	width: 100%;
+}
+footer .footer-bottom .sitemap li {
+	border: medium none;
+	display: block;
+	line-height: 1em;
+	padding: 0 0 5px 0px;
+}
+/*responsive media queries*/
+@media screen and (min-width: 480px) {
+	header .tagline {
+		background: url("../img/divider-tagline.png") no-repeat scroll 0 0 transparent;
+		display: inline-block;
+		margin: 20px 0 0;
+		min-height: 45px;
+		padding: 10px 0 10px 10px;
+		vertical-align: top;
+	}
+	
+	/*common components*/
+	#main .page-navigation a {
+		font-size: 16px;
+	}
+	#main .page-navigation .nav-next {
+		margin-right: 20px;
+	}
+	/*end common components*/
+
+	footer .footer-bottom .sitemap {
+		border-top: none;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	footer .footer-bottom .sitemap li {
+		border-left: 1px solid #FFFFFF;
+		display: inline-block;
+		line-height: 1em;
+		padding: 0px 5px 0px 9px;
+	}
+	footer .footer-bottom .sitemap li:first-child {
+		border-left: medium none;
+		padding-left: 0px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.slider-wrapper {
+		display: block;
+	}
+}
+@media screen and (min-width: 768px) {
+	header .col-md-8, header .col-sm-8 {
+		padding-left: 0;
+	}
+	header #logo img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		width: 100%;
+		margin: 20px 0 20px 5px;
+	}
+	header .tagline h2 {
+		font-size: 20px;
+	}
+	header .searchbox {
+		bottom: auto;
+		right: auto;
+		position: relative;
+		float: right;
+		margin-top: 60px;
+		text-align: left;
+		width: 260px;
+	}
+	nav .site-access {
+		left: auto;
+		right: 0px;
+		top: 8px;
+	}
+	nav#topnav {
+		height: 61px;
+	}
+	nav#topnav .navbar {
+		border-radius: 4px 4px 0px 0px;
+		-moz-border-radius: 4px 4px 0px 0px;
+		-webkit-border-radius: 4px 4px 0px 0px;
+	}
+	nav#topnav .navbar-collapse {
+		padding-left: 0px;4
+		padding-right: 0px;
+	}
+	nav#topnav .nav ul.root > li {
+		border-right: 1px solid #2F2F2F;
+		border-top: none;
+		display: inline-block;
+		float: left;
+		height: 59px;
+		position: relative;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	nav#topnav .nav ul.root > li:first-child {
+		height: 59px;
+		padding: 15px 20px 16px 5px;
+	}
+	nav#topnav .nav ul.root > li a {
+		display: block;
+		font-size: 18px;
+		height: 59px;
+		line-height: 1em;
+		padding: 21px 20px;
+	}
+	nav#topnav .sfHover > ul {
+		display: block !important;
+		visibility: visible !important;
+	}
+	
+	.our-homes .our-homes-col-wrapper {
+		border: 1px solid #C2C2C2;
+		min-height: 290px;
+	}
+	.our-homes > .row > .col-md-4 {
+		margin-top: 0px;
+	}
+	.our-homes .homes img {
+		padding: 0px 5%;
+	}
+
+	footer .footer-bottom  .copyright {
+		width: 50%;
+	}
+	footer .footer-bottom  .sitemap {
+		width: 50%;
+		text-align: right;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	header #logo {
+		width: auto;
+	}
+	header #logo img {
+		width: auto;
+	}
+}
+/*end responsive media queries*/
+/*end bootstrap fixes*/
+
+/*bootstrap fixes for additional pages*/
+
+
+/*end bootstrap fixes for additional pages*/
+
+
 /*general sp fixes*/
 /*ribbon*/
 #suiteBarLeft {
@@ -1335,6 +1786,8 @@ img.floatright, div.floatright {
     border-color: #993300;
 }
 /*end ribbon*/
+
+
 /*header*/
 /*search box*/
 header #SearchBox .ms-srch-sb-border, header #SearchBox .ms-srch-sb-borderFocused {
@@ -1412,20 +1865,30 @@ nav .site-access .ms-signInLink {
 
 
 
-/*bootstrap fixes*/
-/*bootstrap resets for SharePoint*/
-/*listing 5-20*/
+/*bootstrap 3 fixes*/
+/*bootstrap 3 resets for SharePoint*/
+/*border-box causes many issues with SP*/
 *, *:before, *:after {
-	-moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
 }
-* [class^="span"], * [class^="span"]:before, * [class^="span"]:after {
+/*reset elements that B3 is expecting to be border-box*/
+* [class^="col-"], * [class^="col-"]:before, * [class^="col-"]:after,
+.container, .container:before, .container:after,
+.row, .row:before, .row:after,
+.nav *, .navbar-toggle, .table, .table-responsive, .form-control, .btn-block, .caret, .dropdown-menu, .navbar-toggle, .page-navigation *, .icon-bar, .breadcrumb, .progress-bar, .modal-dialog,
+legend, fieldset, code, pre
+{
+	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 img {
 	max-width: none;
 	width: auto;
 }
-* [class^="span"] img {
+* [class^="col-"] img {
 	max-width: 100%; /*for images inside span grid*/
 }
 #scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
@@ -1435,14 +1898,6 @@ img {
 .ms-siteactions-imgspan {
 	float: none;
 	margin: 0px;
-}
-/*end listing 5-20*/
-
-/*listing 5-21*/
-#s4-ribbonrow [class*="span"] {
-    float: none;
-    margin-left: 0px;
-    line-height: 1.2em;
 }
 input.ms-cui-cb-input {
 	height: 14px;
@@ -1456,135 +1911,123 @@ label {
     display: inline-block;
     margin-bottom: 0px;
 }
-/*end listing 5-21*/
+.navbar-toggle {
+	min-width: 0px;
+}
 /*end bootstrap resets*/
 
-/*Listing 5-23*/
+/*additional B3 required updated styles for SharePoint */
 .theme-nivo-specter .nivoSlider img {
     height: 100% !important;
 }
-/*end Listing 5-23*/
 
-/*Listing 5-24*/
-header > .container, header > .container-fluid {
+/*header search */
+header .searchbox a {
+	float: none;
+}
+header #SearchBox .ms-srch-sb input[type="text"] {
+	width: 80%;
+}
+@media screen and (min-width: 768px) {
+	header #SearchBox .ms-srch-sb input[type="text"] {
+	    width: 170px;
+	}
+}
+/*end header search */
+
+/*top nav*/
+nav#topnav {
+    height: auto;
+}
+.navbar-collapse {
+	max-height: none;
+}
+/*on mobile devices top nav bar will be a drop down, so we want to show across*/
+.ms-core-listMenu-horizontalBox {
+	display: block;
+}
+nav#topnav .nav ul.root > li span.menu-item {
+	color: #FFFFFF;
+	display: block;
+	font-size: 18px;
+	height: 47px;
+	line-height: 1em;
+	padding: 15px 0;
 	position: relative;
 }
-header .searchbox {
-	bottom: auto;
-	right: auto;
-	position: relative;
-	float: right;
-	margin-top: 60px;
-	text-align: left;
-	width: 260px;
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    border: none;
 }
-header #searchInputBox input[type=text]{
+/*images within nav should not use respponsive properties*/
+nav#topnav .nav img {max-width: none;}
+/*hide the edit nav button on mobile devices*/
+nav#topnav .nav ul.root > li.ms-navedit-editArea {
+	display: none;
+}
+/*hide or provide padding for downdown arrow*/
+nav#topnav .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+	width: 100%;
+	display: block;
+}
+
+/*dynamic menus should not appear*/
+nav#topnav .nav ul.root > li ul {
+	display: none !important;
+	left: auto;
+	top: auto;
+	position: relative;
 	box-shadow: none;
-	transition: none;
-	-moz-transition: none;
-	-webkit-transition: none;
 }
-/*end Listing 5-24*/
+nav#topnav .nav ul.root li.dynamic-children > ul {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: auto !important;
+}
+nav#topnav .nav ul.root > li.shown ul {
+	display: block !important;
+}
+nav#topnav ul.dynamic > li {
+	background: transparent none;
+	border-right: medium none;
+	border-top: 1px solid #2F2F2F;
+	display: block;
+	float: none;
+	height: auto;
+}
+nav#topnav .nav ul.root > li ul li a {
+	padding: 15px;
+}
 
-/*Listing 5-25*/
-header .social {
-	right: 20px;
-}
-/*end Listing 5-25*/
-
-/*Listing 5-26*/
-footer {
-	padding-top: 10px;
-}
-footer .span4 h1, footer .span4 h2, footer .span4 h3, footer .span4 h4, footer .span4 h5, footer .span4 h6 {
-	font-weight: normal;
-	margin-bottom: 20px;
-	padding-bottom: 0;
-	padding-top: 0;
-	text-align: center;
-}
-footer .footer-bottom  .container-fluid {
-	padding: 15px 20px;
-}
-footer .footer-bottom p, footer .footer-bottom li {
-	font-size: 13px;
-}
-footer .footer-bottom .copyright, footer .footer-bottom .sitemap {
-	min-height: 0px;
-}
-footer .footer-bottom  .sitemap {
-	text-align: right;
-}
-/*end Listing 5-26*/
-
-/*responsive media queries*/
-/*Listing 5-22*/
-@media (min-width: 1200px) {
-	header > .container-fluid, nav#topnav > .container-fluid, footer > .container-fluid, .footer-bottom  > .container-fluid  {
-		max-width: 1160px;
-		margin-left: auto;
-		margin-right: auto;
+@media screen and (min-width: 768px) {
+	nav#topnav {
+		height: 52px;
 	}
-	#main {
-		max-width: 1200px;
-		margin-left: auto;
-		margin-right: auto;
+	/*reset back to inline for normal view*/
+	.ms-core-listMenu-horizontalBox {
+		display: inline-block;
 	}
-}
-/*end Listing 5-22*/
-
-/*Listing 5-27*/
-@media (max-width: 979px) {
-	header #logo {
-		width: 50%;
+	nav#topnav .nav ul.root > li span.menu-item {
+		font-size: 18px;
+		height: 59px;
+		line-height: 1em;
+		padding: 21px 20px;
 	}
-	header #logo img {
+	/*hide or provide padding for downdown arrow*/
+	nav#topnav .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+		padding-right: 20px;
+		width: auto;
+		display: inline;
+	}
+	/*show the edit nav link again for larger devices*/
+	nav#topnav .nav ul.root > li.ms-navedit-editArea {
 		display: block;
-		width: 100%;
-		max-width: 100%;
-		height: auto;
 	}
-	header .tagline h2 {
-		font-size: 20px;
-	}
-	header .searchbox {
-		margin-top: 50px;
-	}	
-}
-@media (max-width: 767px) {
-	header #logo img {
-		margin: 10px 0px 0px 5px;
-	}
-	header .tagline h2 {
-		font-size: 16px;
-	}
-	header .searchbox {
-		margin: 10px 1% 10px;
-		float: left;
-		width: 98%;
-	}
-	header #searchInputBox input[type="text"] {
-		width: 80%;
-	}
-	header .searchbox a {
-		float: right;
-		margin-right: 2%;
-	}
-	header .social {
-		right: 1%;
+	/*we need to override where SP is placing dynamic nav items*/
+	nav#topnav .nav ul.root li.dynamic-children > ul {
+		position: absolute !important;
+		top: 59px !important;
+		left: 0 !important;
 	}
 }
-@media (max-width: 479px) {
-	header .tagline {
-		background: transparent none;
-		display: block;
-		margin: 5px 10px;
-		min-height: 0px;
-		padding: 0px;
-		vertical-align: top;
-	}
-	header .tagline h2 {
-		font-size: 16px;
-	}
-}
-/*end Listing 5-27*/
+/*end top nav

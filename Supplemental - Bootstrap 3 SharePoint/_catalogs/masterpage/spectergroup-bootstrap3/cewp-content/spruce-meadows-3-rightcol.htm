@@ -1,0 +1,48 @@
+﻿<!--
+/_catalogs/masterpage/spectergroup-bootstrap3/cewp-content/spruce-meadows-3-rightcol.htm
+-->
+<!-- sidebar -->
+<aside id="sidebar" class="community-listing">
+	<ul>
+		<li class="block">
+			<h4 class="heading">Community Tools</h4>
+			<ul>
+				<li class="page-item"><a href="#">Manage discussions</a></li>
+				<li class="page-item"><a href="#">Create categories</a></li>
+				<li class="page-item"><a href="#">Assign badges to members</a></li>
+				<li class="page-item"><a href="#">Reputation settings</a></li>
+				<li class="page-item"><a href="#">Community settings</a></li>
+			</ul>
+		</li>
+		
+		<li class="block">
+			<h4 class="heading">What's Happening</h4>
+			<ul>
+				<li class="cat-item"><a href="#" title="title">Members<span class="post-counter"> (9)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Discussions<span class="post-counter"> (23)</span></a></li>
+				<li class="cat-item"><a href="#" title="title">Replies<span class="post-counter"> (56)</span></a></li>
+				<li class="cat-item"><a href="#">Top contributors</a></li>
+			</ul>
+		</li>
+		
+		<li class="block">
+			<div id="map_canvas"></div>
+			<!-- GOOGLE MAPS -->
+			<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true" ></script>
+			<script type="text/javascript">
+				function initGMap() {
+					var latlng = new google.maps.LatLng(38.5450, -121.7394);
+					var myOptions = {
+					  zoom: 12,
+					  center: latlng,
+					  mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"),
+					myOptions);
+				}
+				jQuery(document).ready(function($) {initGMap();});
+			</script>
+		</li>
+	</ul>
+</aside>
+<!-- ENDS sidebar -->
